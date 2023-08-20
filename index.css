@@ -12,19 +12,29 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 2vw 2vw;
 }
 .navbar h1 {
     font-family: 'Poppins', sans-serif;
+    font-size:24pt ;
+   
 }
 .navbar ul  {
     list-style-type: none;
     display: flex;
     justify-content:space-evenly;
-    background-color: aqua;
+    /* background-color: aqua; */
+    text-decoration: overline;
+    cursor: pointer;
 }
 .navbar ul li {
     padding: 2vw;
     font-family: 'Poppins', sans-serif;
+    font-size:15pt ;
+}
+.navbar ul :hover{
+    color:#ef8b42 ;
+    background-color: aqua;
 }
 .navbar ul img {
     padding: 2vw;
