@@ -2,12 +2,18 @@
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     background-color: #f6f6f6;
-   
+
 }
+body {
+    width: 85vw;
+    margin: auto;
+    /* background-color: aqua; */
+}
+
 /* <------*******NAV BAR STILING STARTS HERE*********-------> */
 .navbar {
     display: flex;
@@ -16,44 +22,49 @@
     margin: 2vw 2vw;
     box-sizing: border-box;
 }
+
 .navbar h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size:24pt ;
+    font-size: 24pt;
     cursor: pointer;
-   
+
 }
+
 .logo:hover {
     color: #ef8b42;
     /* background-color: aqua; */
 }
-.navbar ul  {
+
+.navbar ul {
     list-style-type: none;
     display: flex;
-    justify-content:space-evenly;
- 
+    justify-content: space-evenly;
+
     text-decoration: overline;
     cursor: pointer;
 }
+
 .navbar ul li {
     padding: 2vw;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3vw ;
+    font-size: 1.3vw;
     font-weight: 400;
     /* transition: ease 0.2s; */
     /* color: blue; */
 }
 
-.listitem:hover{
+.listitem:hover {
     color: #ef8b42;
     font-size: 1.35vw;
     transition: ease 0.2s;
     text-decoration: overline #ef8b42;
     /* background-color: aquamarine; */
 }
-.iconlist{
+
+.iconlist {
     gap: 3%;
-   
+
 
 
 }
@@ -64,8 +75,9 @@
     background-color: #ffffff;
     margin-left: 5%;
 }
-.menu{
-display: none;
+
+.menu {
+    display: none;
 }
 
 
@@ -79,13 +91,14 @@ display: none;
     position: relative;
     /* background-color: rgb(0, 17, 255); */
 }
-.headBackground{
+
+.headBackground {
     position: absolute;
     top: 0;
     z-index: 1;
 }
 
-.p1{
+.p1 {
     /* background-color:rgb(255, 0, 21) ; */
     font-family: 'Poppins', sans-serif;
     font-size: 1.3vw;
@@ -96,16 +109,18 @@ display: none;
     margin-bottom: 2vh;
     background-color: transparent;
 }
+
 .p2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.9vw;
-    font-weight:700;
+    font-weight: 700;
     position: relative;
     z-index: 2;
     background-color: transparent;
     margin-bottom: 2vh;
 }
-.p3{
+
+.p3 {
     font-family: 'Poppins', sans-serif;
     font-size: smaller;
     font-weight: 400;
@@ -115,16 +130,18 @@ display: none;
     background-color: transparent;
     margin-bottom: 4vh;
 }
-.mail{
+
+.mail {
     /* background-color: aqua; */
     width: 40%;
     position: relative;
 }
+
 .head input {
     width: 100%;
     height: 9vh;
     position: relative;
-    border:0px solid;
+    border: 0px solid;
     box-shadow: none;
     border-radius: 40px;
     background-color: #b3aeae;
@@ -132,24 +149,28 @@ display: none;
     color: #e7e5e5;
     font-family: 'Poppins', sans-serif;
 
-      border-color: inherit;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
 
 }
-.headBackground textarea :focus{
+
+.headBackground textarea :focus {
     border: none;
 }
 
 
 .head input textarea:focus,
- input:focus{ border: none;}
+input:focus {
+    border: none;
+}
+
 .head button {
     position: absolute;
     right: 0;
     top: 0;
-    height:100%;
+    height: 100%;
     width: 30%;
     border: none;
     border-radius: 40px;
@@ -160,32 +181,43 @@ display: none;
 
 /* <-----********* SECTION 1 STYLING STARTS HERE ***********--------> */
 /* <-------****left part *****-----> */
-.section1{
+.section1 {
+    box-sizing: border-box;
     display: flex;
-    width: 93%;
+    
     justify-content: center;
     /* align-items: center; */
     margin-top: 10vh;
 }
 
-.section1Image{
+.section1Image {
     border-top-right-radius: 30px;
     border-radius: 30px;
-    margin-left: 7vw;
+    /* margin-left: 7vw; */
     margin-right: 5vw;
 }
 
 /* <------*******RIGHT PART*******------> */
-.section1Rightbox{
+.section1Rightbox {
     position: relative;
+    width: 50%;
 }
 
-.topleft{
+/* <----***RIGHT TOP PART *******-----> */
+
+.section1toppart {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.topleft {
     display: flex;
     align-items: center;
     gap: 2vw;
     box-sizing: border-box;
-    height:auto;
+    height: 4vw;
+
 }
 
 .topleft button {
@@ -193,50 +225,116 @@ display: none;
     border-radius: 200px;
     border: none;
     background-color: #e2dcdc;
-     font-family: 'Poppins', sans-serif;
-     font-weight: 700;
-     font-size:2vw;
-     color: #ef8b42;
-}
-
-.topleft p{
-       font-family: 'Poppins', sans-serif;
-       font-weight: 600;
-}
-
-.section1TopRight{
-    position: absolute;
-    right: 0;
-    top: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
     color: #ef8b42;
 }
 
-
-
-
-
-
-@media  (max-width: 900px) {
-  .menu{
-    display: block;
-  }
-
-.navbar{
-    display:block;
-    align-items: flex-end;
-    justify-content: flex-end;
-    text-align: end;
-    margin-top: 6vh;
+.topleft p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
-.navbar ul {
-    display: block;
-    
-}
-.menu{
+
+/* .section1TopRight {
     position: absolute;
     right: 0;
     top: 0;
+    
+} */
+.section1TopRight {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.section1TopRight span {
+    color: #ef8b42;
+}
+
+/* <-------********RIGHT BOTTOM PART **********-----------> */
+
+.section1RightBoxBottom {
+    display: flex;
+    justify-content: space-between;
+}
+.readPost {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.section1RightBoxOvalButtons {
+    display: flex;
+    gap: 1vw;
+}
+
+.ovalBtn {
+    
+    border: .1px
+    solid black;
+    border-radius: 30px;
+    padding: .8vw 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    color: #b1acac;
+    font-size: 1vw;
+}
+
+/* <-----**********SECTION 2 STARTS HERE **********------------>
+ */
+
+.section2{
+    margin-top: 7vh;
+    width: 100%;
+    /* background-color: aqua; */
+    margin: auto;
+    
+}
+.section2 h1{
+    margin-top: 7vh;
+}
+
+.section2Container{
+    /* width: 100%; */
+    display: grid;
+    background-color: aqua;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    column-gap: 3vw;
+
+}
+.containerBoxImage {
+    width: 100%;
+    /* height: 500px; */
 }
 
 
-  }
+
+@media (max-width:900px) {
+    *{
+        background-color:#ef8b42;
+    }
+    .menu {
+        display: block;
+    }
+
+    .navbar {
+        display: block;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: end;
+        margin-top: 6vh;
+    }
+
+    .navbar ul {
+        display: block;
+
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+}
