@@ -284,7 +284,9 @@ input:focus {
     margin-top: 7vh;
     width: 100%;
     margin: auto;
+    padding-bottom: 23vh;
     position: relative;
+
 
 }
 
@@ -336,33 +338,72 @@ input:focus {
     /* gap: 1vw; */
 }
 
-.section2Button{
-    padding: 2vw;
+.section2Button {
+    padding: 1.5vw 2vw;
     position: absolute;
     right: 0;
+    bottom: 0;
+    bottom: -15;
     margin-top: 9vw;
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
     background-color: #ef8b42;
     font-family: 'Poppins', sans-serif;
-    color:#e2dcdc;
+    color: #e2dcdc;
+    display: block;
 
 
 }
+
+/* <----*****SECTION 2 ENDS HERE END SECTION 3 STSRTS HERE ********------>  */
+
+.section3  {
+    margin: auto;
+    box-sizing: border-box;
+    margin-top: 10vh;
+    display: flex;
+    height: 70vh;
+
+}
+.section3Left{
+    width: 50%;
+    box-sizing: border-box;
+    height: 100%;
+    
+}
+
+.section3Right{
+    width: 50%;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: auto;
+    
+    height: 100%;
+}
+.section3RightPartBox{
+    display: flex;
+}
+
+
 
 @media (max-width:900px) {
     * {
         /* background-color: #ef8b42; */
     }
-    body{
+
+    body {
         width: 100%;
     }
-    .logo{
+
+    .logo {
         position: absolute;
         left: 4vh;
-          top: 4vh;
-          background-color: transparent;
+        top: 4vh;
+        background-color: transparent;
     }
+
     .menu {
         display: flex;
         width: 3vw;
@@ -372,7 +413,7 @@ input:focus {
     }
 
     .navbar {
-        display:block;
+        display: block;
         align-items: flex-end;
         justify-content: flex-end;
         text-align: end;
@@ -380,15 +421,18 @@ input:focus {
         text-align: center;
         background-color: #facaa7;
     }
-    .navlist{
+
+    .navlist {
         background-color: transparent;
         display: none;
     }
+
     .navbar ul {
         /* display: none; */
         background: transparent;
 
     }
+
     .navbar ul li {
         background-color: transparent;
         /* color: #e7e5e5; */
@@ -396,10 +440,12 @@ input:focus {
         font-size: 2vw;
 
     }
-    .listitem:hover{
+
+    .listitem:hover {
         font-size: 2vw;
     }
-    .navbar ul img{
+
+    .navbar ul img {
         border-right-color: transparent;
     }
 
