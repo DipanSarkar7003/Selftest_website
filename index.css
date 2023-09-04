@@ -8,6 +8,10 @@
     
 
 }
+html body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     width: 85vw;
@@ -394,12 +398,12 @@ input:focus {
 
 
 @media (max-width:900px) {
-    * {
-        /* background-color: #ef8b42; */
-    }
+
 
     body {
         width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
    
@@ -442,6 +446,7 @@ input:focus {
     font-size: 2vw;
     margin-top: 4vh;
     text-align: center;
+    margin-top: 1.5vh;
 }
 .p2{
     font-size: 4vw;
@@ -486,6 +491,16 @@ input:focus {
     width: 85%;
     margin: auto;
 }
+.netflix{
+font-size: 3vw;
+}
+.section1TopRight{
+    font-size: 3vw;
+}
+.ovalBtn{
+
+}
+/* <<--------SECTION 2 STARTS HERE ---->>> */
 
 
 }
