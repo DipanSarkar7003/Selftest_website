@@ -45,28 +45,28 @@
 //     }
 // });
 
-'use strict'
+// 'use strict'
 
-let menu = document.querySelector(".menu");
-let navlist = document.querySelector(".navlist");
-let showMenu = false ;
+// let menu = document.querySelector(".menu");
+// let navlist = document.querySelector(".navlist");
+// let showMenu = false ;
 
-menu.addEventListener('click', toogleNav) ;
+// menu.addEventListener('click', toogleNav) ;
 
-function toogleNav (){
-    if(window.innerWidth<=900){
-    if(showMenu===false){
-        navlist.style.display="block";
-        showMenu=true ;
-    }
-    else{
-        navlist.style.display="none";
-        showMenu=false ;
-    }
-}
-else{
-    navlist.style.display="flex"
-    showMenu=true  ;
-}
+// function toogleNav (){
+//     if(window.innerWidth<=900){
+//     if(showMenu===false){
+//         navlist.style.display="block";
+//         showMenu=true ;
+//     }
+//     else{
+//         navlist.style.display="none";
+//         showMenu=false ;
+//     }
+// }
+// else{
+//     navlist.style.display="flex"
+//     showMenu=true  ;
+// }
     
-}
+// }
