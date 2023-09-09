@@ -8,6 +8,10 @@
     
 
 }
+html body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     width: 85vw;
@@ -333,7 +337,7 @@ input:focus {
     display: flex;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    font-size: smaller;
+    font-size: 1vw;
 }
 
 .bottomItem {
@@ -358,7 +362,9 @@ input:focus {
 
 
 }
-
+.beforeSection3{
+    font-family: 'Poppins', sans-serif;
+}
 /* <----*****SECTION 2 ENDS HERE END SECTION 3 STSRTS HERE ********------>  */
 
 .section3  {
@@ -370,7 +376,7 @@ input:focus {
 
 }
 .section3Left{
-    width: 50%;
+    width: 45vw;
     box-sizing: border-box;
     height: 100%;
     
@@ -380,7 +386,7 @@ input:focus {
 }
 
 .section3Right{
-    width: 50%;
+    width: 45vw;
     box-sizing: border-box;
     display:flex;
     flex-direction: column;
@@ -394,12 +400,12 @@ input:focus {
 
 
 @media (max-width:900px) {
-    * {
-        /* background-color: #ef8b42; */
-    }
+
 
     body {
         width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
    
@@ -442,10 +448,13 @@ input:focus {
     font-size: 2vw;
     margin-top: 4vh;
     text-align: center;
+    margin-top: 1.5vh;
+    
 }
 .p2{
     font-size: 4vw;
     text-align: center;
+    line-height: 1.2;
 }
 .head input{
     height: 6vh;
@@ -486,6 +495,92 @@ input:focus {
     width: 85%;
     margin: auto;
 }
+.netflix{
+font-size: 3vw;
+}
+.section1TopRight{
+    font-size: 3vw;
+}
+.readPost{
+    font-size: 1.9vw;
+}
+.ovalBtn{
+    padding: 1.3vw 4vw;
+    font-size: 1.9vw;
+}
+/* <<--------SECTION 2 STARTS HERE ---->>> */
+.section2{
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10vh;
+}
+.section2Container{
+    grid-template-columns:40vw 40vw;
+    justify-content: center;
+}
+.section2Button{
+    position: absolute;
+    right: 5vw;
+}
 
+.containerBoxBottom {
+    font-size: 1.5vw;
+}
+.section2Button {
+padding: 1.3vw 4vw
+}
+/* <------CONTAINER 2 ENDS HERE --------> */
+/* <-----CONTAINER 3 STARTS HERE------> */
+.beforeSection3{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;  
+}
+.section3{
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin: auto; */
+}
+/* section 3 left part this is  */
+.section3Left{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.section3Left img {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+}
+.section3LeftBoxText{
+    text-align: center;
+    margin: auto;
+    width: 85%;
+    margin-bottom: 5vh;
+}
+.netflix{
+    font-size: 1.9vw;
+}
+.section1TopRight  {
+    font-size: 1.9vw;
+   
+
+}
+
+/* SECTION 3 RIGHT PART STARTS HERE  */
+.section3Right{
+    margin: auto;
+    width: 9vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+}
+.section3RightPartBox{
+    flex-direction: column;
+}
 
 }
